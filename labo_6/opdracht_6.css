@@ -1,0 +1,10 @@
+.checklist li.checked {
+    background-image: url('images/vinkje.png');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+.checklist li {
+    background-image: url('images/leegvakje.png');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
