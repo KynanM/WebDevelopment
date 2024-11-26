@@ -1,0 +1,37 @@
+main {
+    margin: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article {
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 1.25em;
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article img {
+    max-width: 40%;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+}
+
+
+article:nth-of-type(even) img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+
+article:nth-of-type(odd) img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+article p {
+    margin: 0;
+}
