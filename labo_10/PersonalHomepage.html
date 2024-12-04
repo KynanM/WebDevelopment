@@ -1,10 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoonlijke Homepage - Kynan Melsens</title>
+    <link rel="stylesheet" href="stylecheet/bootstrap-grid.css">
+    <link rel="stylesheet" href="stylecheet/PersoonlijkePagina.css">
 </head>
-<body>
+<body class="bg-light">
 
+<header class="bg-primary text-white text-center py-5 mb-4">
+    <div class="container">
+        <h1 class="display-4">Welkom op de homepage van Kynan Melsens</h1>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="mb-5">
+        <h2 class="text-primary border-bottom pb-2">Persoonlijke Informatie</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Volledige naam:</strong> Kynan Melsens</p>
+                <p><strong>Stad:</strong> Olsene</p>
+                <p><strong>Telefoonnummer:</strong> 0492568942</p>
+                <p><strong>Emailadres:</strong> <a href="mailto:kynan.melsens@student.vives.be" class="text-primary">kynan.melsens@student.vives.be</a></p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/trump.jpg" alt="Profielfoto" class="rounded-circle img-fluid shadow" width="150">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobby's -->
+    <section class="mb-5">
+        <h2 class="text-primary border-bottom pb-2">Hobby's</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Voetbal</h3>
+                <p>Ik heb vroeger gevoetbald maar ben dit jaar gestopt. Doe dit wel nog soms in mijn vrije tijd.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Reizen</h3>
+                <p>Ik reis graag en ben al op veel plekken geweest in de wereld.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorieten -->
+    <section class="mb-5">
+        <h2 class="text-primary border-bottom pb-2">Favorieten</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h3>Favoriete Muziek</h3>
+                <img src="images/Muziek.png" alt="Muziek" class="img-fluid rounded shadow mb-2">
+                <p class="text-muted">Muziek waar ik naar luister: rap, house, techno.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Favoriete Films</h3>
+                <div class="d-flex flex-wrap">
+                    <figure class="text-center mx-2">
+                        <img src="images/Interstellar.jpg" alt="Interstellar Film" class="img-fluid rounded shadow" width="150">
+                        <figcaption class="text-muted">Interstellar</figcaption>
+                    </figure>
+                    <figure class="text-center mx-2">
+                        <img src="images/WolfOfWallStreet.jpg" alt="Wolf of Wall Street Film" class="img-fluid rounded shadow" width="150">
+                        <figcaption class="text-muted">The Wolf of Wall Street</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prognose -->
+    <section class="mb-5">
+        <h2 class="text-primary border-bottom pb-2">Prognose</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="bg-primary text-white">
+                <tr>
+                    <th>Naam</th>
+                    <th>Fundamentals of Programming</th>
+                    <th>Web Development</th>
+                    <th>Databases</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Kynan Melsens</td>
+                    <td>7/10</td>
+                    <td>7/10</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>Aaron</td>
+                    <td>8/10</td>
+                    <td>6/10</td>
+                    <td>7/10</td>
+                </tr>
+                <tr>
+                    <td>Gilles</td>
+                    <td>8/10</td>
+                    <td>7/10</td>
+                    <td>6/10</td>
+                </tr>
+                <tr>
+                    <td>Joussef</td>
+                    <td>9/10</td>
+                    <td>7/10</td>
+                    <td>7/10</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="text-center bg-primary text-white py-4">
+    <p>&copy; 2024 Kynan Melsens | <a href="mailto:kynan.melsens@student.vives.be" class="text-white">Contacteer mij</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
