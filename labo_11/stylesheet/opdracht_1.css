@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+.container .block {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #ccc;
+}
