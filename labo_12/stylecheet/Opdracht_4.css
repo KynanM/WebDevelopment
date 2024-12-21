@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Kumbh";
+    src: url(../fonts/kumbh.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    font-size: 1.8em;
+    font-family: "Kumbh";
+    min-block-size: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+            url('../images/bg-pattern-top.svg') no-repeat right calc(47vw + 15%) bottom calc(65vh - 15vw),
+            url('../images/bg-pattern-bottom.svg') no-repeat left calc(40vw + 25%) top calc(72vh - 10vw),
+            hsl(185, 75%, 39%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    inline-size: 100%;
+    max-inline-size: 350px;
+    min-block-size: 20rem;
+    background: url('../images/bg-pattern-card.svg') no-repeat, white;
+    border-radius: .5em;
+}
+
+.card .profile-picture-wrapper {
+    order: -1;
+    margin-block-start: 4.5em;
+}
+
+.card img {
+    border-radius: 50%;
+    border: .25em solid white;
+}
+
+.card header {
+    text-align: center;
+    border-block-end: 1px solid hsl(0, 0%, 59%);
+}
+
+.card header div {
+    display: inline-block;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.age,
+.location {
+    color: hsl(0, 0%, 59%);
+}
+
+.location {
+    font-size: .75rem;
+}
+
+.card .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    inline-size: 100%;
+    font-size: .75rem;
+    padding: 2em;
+    color: hsl(0, 0%, 59%);
+}
+
+.stats .amount {
+    color: initial;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.card .stats > * {
+    text-align: center;
+}

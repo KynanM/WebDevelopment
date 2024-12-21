@@ -3,7 +3,6 @@ html {
     padding: 0px;
 }
 
-
 body {
     font-family: sans-serif;
     margin: 0;
@@ -61,4 +60,14 @@ a {
     color: white;
     border-radius: 4px;
 }
+
+.container {
+    flex-direction: row;
+    display: flex;
+}
+
+.card {
+    align-self: center;
+}
+
 
