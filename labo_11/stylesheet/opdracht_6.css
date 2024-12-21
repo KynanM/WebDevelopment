@@ -1,4 +1,3 @@
-/* items */
 
 section {
     display: grid;
@@ -50,7 +49,6 @@ section div {
 
 
 
-/* specific item styles */
 
 .item-1 {
     background: #b03532;
