@@ -1,0 +1,48 @@
+body{
+    width: 95%;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.h1-header{
+    color: white;
+    background-image: url("../header.jpg");
+    background-size: cover;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+nav a {
+    color: lawngreen;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+nav{
+    background-color: dimgray;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 30px;
+    margin-bottom: 0;
+}
+article{
+    background-color: whitesmoke;
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+article header h1
+{
+    padding-left: 5px;
+    color: dimgrey;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+footer {
+    padding-bottom: 5px;
+    padding-left: 5px;
+}

@@ -1,0 +1,83 @@
+/* Algemene instellingen voor de grid lay-out */
+section{
+    display: grid; /* De container wordt een grid container */
+    grid-template-columns: 1fr 2fr 1fr; /* Drie kolommen: de middelste kolom neemt 2 keer zoveel ruimte in als de linker en rechter kolom */
+    gap: 10px; /* Er wordt een 10px ruimte tussen de grid-items (margins tussen de items) */
+}
+
+/* Algemene stijl voor de div's binnen de grid (de items) */
+section div {
+    color: white; /* Witte tekstkleur */
+    padding: 20px; /* 20px padding binnenin elke div voor ruimte rondom de tekst */
+    text-align: center; /* Centraal uitlijnen van de tekst */
+    font-size: 3em; /* Grote tekstgrootte (3 keer de normale grootte) */
+}
+
+/* Specifieke stijlen voor elk grid-item */
+.item-1 {
+    background: #b03532; /* Achtergrondkleur voor item 1 (donkerrood) */
+}
+.item-2 {
+    background: #33a8a5; /* Achtergrondkleur voor item 2 (groenblauw) */
+}
+.item-3 {
+    background: #30997a; /* Achtergrondkleur voor item 3 (donkergroen) */
+}
+.item-4 {
+    background: #6a478f; /* Achtergrondkleur voor item 4 (paars) */
+}
+.item-5 {
+    background: #da6f2b; /* Achtergrondkleur voor item 5 (oranje) */
+}
+.item-6 {
+    background: #3d8bb1; /* Achtergrondkleur voor item 6 (blauw) */
+}
+.item-7 {
+    background: #e03f3f; /* Achtergrondkleur voor item 7 (rood) */
+}
+.item-8 {
+    background: #59a627; /* Achtergrondkleur voor item 8 (groen) */
+}
+.item-9 {
+    background: #4464a1; /* Achtergrondkleur voor item 9 (blauw) */
+}
+
+/* Media query voor schermen kleiner dan 760px breed (bijvoorbeeld mobiele apparaten) */
+@media screen and (max-width: 760px)
+{
+    /* De grid layout wordt aangepast naar 2 kolommen in plaats van 3 */
+    section{
+        grid-template-columns: 1fr 1fr; /* Twee kolommen, beide nemen evenveel ruimte in */
+    }
+
+    /* De items met de volgende klassen worden verborgen op kleinere schermen */
+    .item-1, .item-6{
+        display: none; /* Deze items worden niet weergegeven op kleine schermen */
+    }
+
+    /* Item 9 wordt naar de eerste rij verplaatst */
+    .item-9{
+        grid-row-start: 1; /* Start op de eerste rij */
+        grid-row-end: 2;   /* Eindigt op de tweede rij */
+    }
+
+    /* Item 4 wordt naar de tweede rij verplaatst */
+    .item-4{
+        grid-row-start: 2; /* Start op de tweede rij */
+        grid-row-end: 3;   /* Eindigt op de derde rij */
+    }
+
+    /* Item 7 wordt naar de derde rij verplaatst */
+    .item-7{
+        grid-row-start: 3; /* Start op de derde rij */
+        grid-row-end: 4;   /* Eindigt op de vierde rij */
+    }
+
+    /* Item 3 neemt de volledige breedte in van de eerste en tweede kolom en komt op de vierde rij */
+    .item-3{
+        grid-row-start: 4; /* Start op de vierde rij */
+        grid-row-end: 5;   /* Eindigt op de vijfde rij */
+        grid-column-start: 1; /* Start in de eerste kolom */
+        grid-column-end: 3;   /* Eindigt in de derde kolom (neemt beide kolommen in beslag) */
+    }
+}

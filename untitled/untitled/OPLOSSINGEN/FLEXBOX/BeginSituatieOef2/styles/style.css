@@ -1,0 +1,84 @@
+html {
+    background-color: #333; /* Zet de achtergrondkleur van het hele document op donkergrijs */
+    font-family: helvetica, sans-serif; /* Stelt het lettertype in op Helvetica, of sans-serif als dat niet beschikbaar is */
+}
+
+body {
+    margin: 5px; /* Voegt marge toe aan de body van het document */
+    font-size: 1em; /* Stelt de basis tekstgrootte in op 1em (de standaard grootte) */
+    border: solid white 8px; /* Voegt een 8px witte rand toe rond de body */
+    padding: 0; /* Verwijdert de standaard padding van de body */
+}
+
+* {
+    padding: 10px; /* Voegt padding van 10px toe aan alle elementen in het document */
+}
+
+header, footer {
+    background-color: #ddaa00; /* Zet de achtergrondkleur van de header en footer op een gele tint */
+    color: white; /* Maakt de tekstkleur in de header en footer wit */
+}
+
+nav {
+    display: flex; /* Zet de navigatie in een flexbox layout */
+    background-color: #ccc; /* Zet de achtergrondkleur van de navigatie op een lichtgrijze tint */
+    padding: 5px 2px; /* Voegt padding toe rondom de navigatie links */
+}
+
+nav > a {
+    background-color: white; /* Zet de achtergrondkleur van de navigatielinks op wit */
+    color: #ddaa00; /* Zet de tekstkleur van de links op dezelfde kleur als de header/footer (geel) */
+    margin: 0 5px; /* Voegt horizontale marge toe tussen de navigatielinks */
+    border: 1px solid #ccc; /* Zet een lichte grijze rand om elke navigatielink */
+    flex: 1; /* Zorgt ervoor dat de navigatielinks gelijkmatig de beschikbare ruimte verdelen */
+    text-align: center; /* Centreert de tekst in de navigatielinks */
+    text-decoration: none; /* Verwijdert de onderstreping van de navigatielinks */
+}
+
+main {
+    display: flex; /* Zet de main content in een flexbox layout */
+    flex-direction: column; /* Zet de flex items (sections) in een kolomrichting */
+    justify-content: center; /* Centreert de flex items verticaal binnen de main */
+    background-color: grey; /* Zet de achtergrondkleur van het main gedeelte op grijs */
+}
+
+@media screen and (min-width: 700px) {
+    /* Deze media query past de layout aan wanneer het scherm breder is dan 700px */
+    main {
+        flex-direction: row; /* Zet de flex items (sections) in een rijrichting */
+        flex-wrap: wrap; /* Laat de flex items wrappen (om naar een nieuwe regel te gaan als er niet genoeg ruimte is) */
+    }
+    footer {
+        text-align: center; /* Centreert de tekst in de footer */
+        border-top: 10px solid black; /* Voegt een 10px zwarte rand toe bovenaan de footer */
+    }
+}
+
+main > section {
+    background-color: white; /* Zet de achtergrondkleur van elke section op wit */
+    margin: 5px; /* Voegt marge toe rondom elke section */
+    padding: 10px; /* Voegt padding toe rondom de inhoud van elke section */
+    display: flex; /* Zet de inhoud van de section in een flexbox layout */
+    flex-direction: column; /* Zet de inhoud van de section in een kolomrichting */
+}
+
+main > section > img,
+main > section > p {
+    padding: 0; /* Verwijdert de padding van de afbeelding en de paragraaf in de section */
+}
+
+main > section > a {
+    border: 1px solid #333; /* Zet een donkere rand om de link in de section */
+    text-decoration: none; /* Verwijdert de onderstreping van de link */
+    color: grey; /* Zet de tekstkleur van de link op grijs */
+    text-align: center; /* Centreert de tekst in de link */
+}
+
+h1 {
+    margin: 0; /* Verwijdert de marge van de h1 */
+    text-align: center; /* Centreert de tekst in de h1 */
+}
+
+img {
+    padding: 0; /* Verwijdert de padding van afbeeldingen */
+}

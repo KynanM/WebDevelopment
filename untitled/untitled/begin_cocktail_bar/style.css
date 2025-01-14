@@ -1,0 +1,72 @@
+body{
+    width: 95%;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+h1, h2{
+    color: #007e7e;
+    font-weight: bolder;
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+font-size: 1.3em;
+}
+.sidebar h1 {
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;
+}
+.sidebar h2{
+    color:salmon;
+    font-weight: bold;
+
+}
+.sidebar h1, .sidebar h2, .sidebar p, .sidebar img{
+    text-align: center;
+    padding-left: 10px;
+
+}
+.sidebar
+{
+    background-image: url("images/cocktail.gif");
+    display: block;
+    width: 30%;
+    float: right;
+    align-self: center;
+    margin-left: 30px;
+    background-repeat: repeat-x;
+}
+.image-header{
+    display: block;
+    margin: 0 auto;
+}
+.main-content{
+    width: 70%;
+    padding-right: 20px;
+
+}
+a{
+    color: grey;
+}
+#guarantee
+{
+    font-size: medium;
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    font-style: italic;
+    color: #444444;
+    padding: 20px 20px 20px 60px;
+    background-size: 60px;
+    background-color: #A7CECE;
+    border: white 2px dotted;
+    margin: 30px auto;
+}
+footer{
+    font-size: smaller;
+    margin-top: 180px;
+    padding-left: 400px;
+    text-align: center;
+}

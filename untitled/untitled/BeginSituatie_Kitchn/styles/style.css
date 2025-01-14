@@ -1,0 +1,273 @@
+/* Responsieve afbeelding: breedte 100%, hoogte automatisch, display block */
+.respimg {
+    width: 100%; /* Zorgt ervoor dat de afbeelding zich aanpast aan de breedte van de container */
+    height: auto; /* Behoudt de aspect ratio van de afbeelding */
+    display: block; /* Zorgt ervoor dat de afbeelding als block-element wordt behandeld */
+}
+
+/* Algemene stijlen voor de body */
+body {
+    margin: 0 auto; /* Verwijdert standaard marges en centreert de inhoud horizontaal */
+    font-family: Helvetica, Arial, sans-serif; /* Stelt het standaard lettertype in */
+}
+
+/* Stijlen voor h1 koppen */
+h1 {
+    text-transform: uppercase; /* Zet de tekst in hoofdletters */
+    font-size: 2.5em; /* Geeft de h1 een grote lettergrootte */
+    border-bottom: black 2px solid; /* Voegt een zwarte lijn van 2px onder de h1 toe */
+}
+
+/* Header stijl */
+header {
+    width: 100%; /* Zorgt ervoor dat de header de volledige breedte van de pagina inneemt */
+    border-bottom: #EBE8E8 1px solid; /* Voegt een grijze lijn van 1px toe aan de onderkant van de header */
+}
+
+/* Zorgt ervoor dat het logo in de header een hoogte van 50px heeft */
+header img {
+    height: 50px;
+}
+
+/* Container voor de navigatie, gebruikt grid voor de opmaak */
+.container {
+    padding-bottom: 10px; /* Voegt padding toe aan de onderkant van de container */
+    padding-top: 10px; /* Voegt padding toe aan de bovenkant van de container */
+    display: grid; /* Zet de container om naar een grid layout */
+    grid-template-columns: repeat(7, 1fr); /* Verdeel de ruimte in 7 gelijke kolommen */
+}
+
+/* Stijlen voor elk item in de container */
+.item {
+    text-align: center; /* Centreert de tekst in het item */
+    border-right: #EBE8E8 1px solid; /* Voegt een grijze lijn van 1px toe aan de rechterkant van elk item */
+}
+
+/* Stijlen voor links in de container */
+.container a {
+    margin: 0 auto; /* Centreert de link horizontaal */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters */
+    text-decoration: none; /* Verwijdert de standaard onderstreping */
+    color: #5B4746; /* Stelt de kleur van de tekst in */
+    font-size: 13px; /* Maakt de tekst kleiner */
+}
+
+/* Hover-effect voor de links in de container */
+.container a:hover {
+    text-decoration: underline #fff100 2px solid; /* Voegt een gele onderstreping toe bij hover */
+}
+
+/* Specifieke grid-instellingen voor de verschillende secties */
+.recipes {
+    grid-column-start: 1; /* Zet deze sectie op de eerste kolom */
+    grid-column-end: 2; /* Einde op de tweede kolom */
+}
+
+/* Dezelfde grid-instellingen voor de andere secties */
+.mealplanning { grid-column-start: 2; grid-column-end: 3; }
+.learn { grid-column-start: 3; grid-column-end: 4; }
+.shop { grid-column-start: 4; grid-column-end: 5; }
+.people { grid-column-start: 5; grid-column-end: 6; }
+.holiday { grid-column-start: 6; grid-column-end: 7; }
+.more { grid-column-start: 7; grid-column-end: 8; }
+
+/* Stijlen voor het hoofdcontentblok */
+.main-content {
+    border-top: #EBE8E8 1px solid; /* Voeg een grijze lijn van 1px toe bovenaan de content */
+}
+
+/* Stijlen voor de hoofdheader van de pagina */
+.main-header {
+    background-position: center; /* Centraal positioneren van de achtergrond */
+    background-image: url("../images/headerimage.jpg"); /* Achtergrondafbeelding */
+    background-repeat: no-repeat; /* Zorg ervoor dat de achtergrond niet herhaald wordt */
+    box-shadow: #8D99AE 2px 2px; /* Voeg een schaduw toe aan de header */
+    line-height: 500px; /* Zorgt ervoor dat de tekst verticaal gecentreerd wordt */
+    width: 100%; /* Zorgt ervoor dat de header de volledige breedte van de pagina inneemt */
+    height: 500px; /* Bepaalt de hoogte van de header */
+    color: white; /* Stelt de tekstkleur in op wit */
+    font-size: 40px; /* Geeft de tekst een grote fontgrootte */
+    text-align: center; /* Centreert de tekst horizontaal */
+    margin: 0 auto; /* Centreert de header */
+}
+
+/* Stijlen voor het 'main-recipes' blok */
+.main-recipes {
+    margin: 50px auto; /* Voegt marge boven en onder het blok toe en centreert het */
+    display: grid; /* Zet het om naar een grid layout */
+    width: 980px; /* Bepaalt de breedte van het blok */
+}
+
+/* Grid-instellingen voor de recepten */
+.grid-recipes {
+    display: grid; /* Zet de grid voor de recepten */
+    grid-template-columns: 1fr 1fr; /* Zorgt ervoor dat de recepten in twee kolommen worden weergegeven */
+    justify-content: center; /* Centreert de inhoud binnen de grid */
+}
+
+/* Stijlen voor elk receptitem */
+.recipe-item {
+    margin-right: 1.5em; /* Voegt een marge van 1.5em toe aan de rechterkant van elk item */
+    padding-top: 1em; /* Voegt een padding bovenaan toe */
+    border-top: #ddd solid 1px; /* Voeg een lichte grijze lijn bovenaan het recept toe */
+    border-bottom: #ddd solid 1px; /* Voeg een lichte grijze lijn onderaan het recept toe */
+}
+
+/* Kicker titelstijl voor kleine titels in recepten */
+.small-title {
+    text-transform: uppercase; /* Zet de tekst in hoofdletters */
+    font-size: 1.2em; /* Maakt de tekst groter dan de standaard */
+    letter-spacing: 1px; /* Voeg ruimte toe tussen de letters */
+    color: #ff4d56; /* Zet de tekstkleur naar een rode tint */
+}
+
+/* Stijlen voor de links binnen een receptitem */
+.recipe-item a {
+    text-decoration: none; /* Verwijdert de onderstreping van de link */
+    color: black; /* Zet de tekstkleur van de link op zwart */
+}
+
+/* Stijlen voor de body van elk item */
+.item-body {
+    color: #666666; /* Zet de kleur van de tekst naar donkergrijs */
+    line-height: 2px; /* Verhoogt de lijnhoogte voor betere leesbaarheid */
+}
+
+/* Stijlen voor de auteur van een recept */
+.item-author {
+    padding-right: 10px; /* Voeg padding aan de rechterkant toe */
+    border-right: 1px solid #EBE8E8; /* Voeg een lijn aan de rechterkant van de auteur toe */
+    font-style: italic; /* Zet de tekst in cursief */
+}
+
+/* Stijlen voor de tijdstempel van een recept */
+.item-timestamp {
+    color: #666666; /* Zet de kleur naar donkergrijs */
+    padding-left: 10px; /* Voeg padding aan de linkerkant toe */
+}
+
+/* Stijlen voor het aanbevolen blok */
+.recommended {
+    margin: 50px auto 0 auto; /* Voegt een marge toe boven en onder het blok en centreert het */
+    width: 980px; /* Bepaalt de breedte van het blok */
+}
+
+/* Container voor de aanbevolen items, gebruik grid met kolommen */
+.container-fluid {
+    width: 980px; /* Zet de breedte van de container */
+    gap: 25px; /* Voegt ruimte tussen de items toe */
+}
+
+/* Stijlen voor de kolommen binnen de aanbevolen sectie */
+.container-fluid .row div {
+    margin-right: 25px; /* Voegt een marge aan de rechterkant van de kolommen toe */
+    margin-bottom: 25px; /* Voegt een marge aan de onderkant van de kolommen toe */
+}
+
+/* Stijlen voor de linker kolom in de footer */
+#left {
+    float: left; /* Zorgt ervoor dat het element naar links drijft */
+    text-align: right; /* Zet de tekst rechts uitgelijnd */
+    width: 50%; /* Zet de breedte op 50% */
+    line-height: 2em; /* Verhoogt de lijnhoogte voor betere leesbaarheid */
+    padding: 20px; /* Voeg padding toe */
+}
+
+/* Stijlen voor de rechter kolom in de footer */
+#right {
+    float: right; /* Zorgt ervoor dat het element naar rechts drijft */
+    text-align: left; /* Zet de tekst links uitgelijnd */
+    background-color: black; /* Zet de achtergrondkleur naar zwart */
+    color: white; /* Zet de tekstkleur naar wit */
+    width: 50%; /* Zet de breedte op 50% */
+    line-height: 2em; /* Verhoogt de lijnhoogte voor betere leesbaarheid */
+    padding: 20px; /* Voeg padding toe */
+}
+
+/* Stijlen voor de footer */
+.footer {
+    background-color: black; /* Zet de achtergrondkleur naar zwart */
+    color: white; /* Zet de tekstkleur naar wit */
+    text-align: center; /* Centreert de tekst in de footer */
+    font-size: 12px; /* Maakt de tekst kleiner */
+    padding: 20px; /* Voeg padding toe */
+    clear: both; /* Zorgt ervoor dat de footer onder de floatende elementen komt */
+}
+/* Voor schermen kleiner dan 769px (mobiel en kleine tablets) */
+@media screen and (max-width: 769px) {
+    .container {
+        width: 600px; /* Zorgt ervoor dat de container niet breder is dan 600px */
+    }
+    .main-recipes {
+        width: 600px; /* De main-recipes container wordt 600px breed */
+    }
+    .container-fluid {
+        width: 600px; /* De container-fluid wordt 600px breed */
+    }
+    .main-header {
+        font-size: 3em; /* Kleinere font-size voor de main-header */
+    }
+    #left, #right {
+        width: 100%; /* Zorgt ervoor dat de footer blokken boven elkaar komen in plaats van naast elkaar */
+        text-align: center; /* Centreer de tekst in beide blokken */
+    }
+
+    .recommended {
+        width: 600px; /* Zorgt ervoor dat het recommended blok 600px breed is */
+    }
+    .container a {
+        font-size: 11px; /* Verklein de tekst in de links in de navigatie */
+    }
+}
+
+/* Voor schermen tussen 770px en 999px (kleine tablets tot middelgrote schermen) */
+@media screen and (min-width: 770px) and (max-width: 999px) {
+    .container {
+        width: 750px; /* De container krijgt een breedte van 750px */
+    }
+    .main-recipes {
+        width: 750px; /* De main-recipes container wordt 750px breed */
+    }
+    .container-fluid {
+        width: 750px; /* De container-fluid wordt 750px breed */
+    }
+    .main-header {
+        font-size: 4em; /* Verhoogt de font-size van de header */
+    }
+    #left, #right {
+        width: 50%; /* Zet de blokken naast elkaar in de footer */
+        display: inline-block;
+    }
+    .recommended {
+        width: 750px; /* Het recommended blok krijgt een breedte van 750px */
+    }
+    .container a {
+        font-size: 12px; /* Verhoog de tekstgrootte in de navigatielinks */
+    }
+}
+
+/* Voor schermen groter dan 1000px (grote schermen en desktops) */
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 980px; /* De container krijgt een breedte van 980px */
+    }
+    .main-recipes {
+        width: 980px; /* De main-recipes container wordt 980px breed */
+    }
+    .container-fluid {
+        width: 980px; /* De container-fluid wordt 980px breed */
+    }
+    .main-header {
+        font-size: 5em; /* Verhoog de font-size van de header voor grotere schermen */
+    }
+    #left, #right {
+        width: 50%; /* Zet de footer blokken naast elkaar met gelijke breedte */
+    }
+
+    .recommended {
+        width: 980px; /* Het recommended blok krijgt een breedte van 980px */
+    }
+    .container a {
+        font-size: 13px; /* De tekstgrootte van de links wordt groter */
+    }
+}

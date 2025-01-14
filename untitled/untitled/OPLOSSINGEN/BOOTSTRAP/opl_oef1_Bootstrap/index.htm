@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Bootstrap 5 </title>
+
+    <!-- Meta tag voor responsief ontwerp: Zorgt ervoor dat de pagina goed schaalt op mobiele apparaten -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Deze link voegt de Bootstrap 5-stijlen toe aan de pagina voor grid- en andere stijlen -->
+    <link rel="stylesheet" href="style/bootstrap-grid.css">
+
+    <!-- Eigen stijl -->
+    <!-- Dit is de link naar de eigen CSS-bestanden (style.css) die bovenop de Bootstrap-stijlen worden gebruikt -->
+    <link href="style/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!-- Bootstrap Container: Het primaire wrapper-element voor de inhoud van de pagina -->
+<!-- De container zorgt ervoor dat de inhoud op de juiste manier wordt gecentreerd en goed wordt geschaald -->
+<div class="container">
+
+    <!-- Eerste rij (row): Een rij in het grid systeem van Bootstrap -->
+    <!-- Een rij bevat kolommen (col) die de ruimte verdelen -->
+    <div class="row">
+        <!-- 3 kolommen van gelijke grootte (4 kolom-eenheden per stuk, dus totaal 12 kolom-eenheden) -->
+        <!-- Elke kolom krijgt een kleur door de toegepaste CSS-klasse -->
+        <div class="col-4 colorLightGray">1</div>
+        <div class="col-4 colorGray">2</div>
+        <div class="col-4 colorLightGray">3</div>
+    </div>
+
+    <!-- Tweede rij: Deze rij heeft 3 kolommen, waarvan de middelste kolom breder is -->
+    <!-- De links en rechts van de middelste kolom zijn leeg (kleur LightGray) -->
+    <div class="row">
+        <div class="col-2 colorLightGray"></div> <!-- Links lege ruimte (2 kolom-eenheden) -->
+        <div class="col-8 colorGray"></div> <!-- Middelste kolom (8 kolom-eenheden) -->
+        <div class="col-2 colorLightGray"></div> <!-- Rechts lege ruimte (2 kolom-eenheden) -->
+    </div>
+
+    <!-- Derde rij: Hier zijn de kolommen niet gelijk verdeeld -->
+    <!-- De eerste kolom is 3 eenheden breed, de tweede is 7 eenheden breed, en de derde is 2 eenheden breed -->
+    <div class="row">
+        <div class="col-3 colorLightGray"></div> <!-- Eerste kolom (3 kolom-eenheden) -->
+        <div class="col-7 colorGray"></div> <!-- Tweede kolom (7 kolom-eenheden) -->
+        <div class="col-2 colorLightGray"></div> <!-- Derde kolom (2 kolom-eenheden) -->
+    </div>
+
+</div>
+
+</body>
+</html>

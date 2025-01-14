@@ -1,0 +1,72 @@
+html {
+    margin: 0px; /* Verwijdert de standaard marge van het HTML-document */
+    padding: 0px; /* Verwijdert de standaard padding van het HTML-document */
+}
+
+body {
+    font-family: sans-serif; /* Stelt het lettertype in op sans-serif voor de tekst */
+    margin: 0; /* Verwijdert de marge van de body */
+    background-color: #b4d455; /* Zet de achtergrondkleur van de body op een groene tint */
+}
+
+a {
+    color: white; /* Maakt de tekstkleur van de links wit */
+}
+
+.container {
+    width: 80%; /* Zorgt ervoor dat de container 80% van de breedte van het scherm beslaat */
+    margin: 0 auto; /* Centreert de container horizontaal */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Geeft de kaarten een semi-transparante witte achtergrond */
+    margin: 20px; /* Voegt marge toe tussen de kaarten */
+    padding: 20px; /* Voegt padding toe rondom de inhoud van de kaart */
+    border-radius: 4px; /* Maakt de hoeken van de kaart afgerond */
+    text-align: center; /* Centreert de tekst in de kaart */
+}
+
+.card-title {
+    text-transform: uppercase; /* Zet de tekst in de titel van de kaart in hoofdletters */
+    color: white; /* Maakt de tekstkleur van de titel wit */
+}
+
+.card-body {
+    padding-bottom: 1em; /* Voegt ruimte toe onder de inhoud van de kaart */
+}
+
+.feature-list {
+    margin: 0; /* Verwijdert de marge van de lijst van kenmerken */
+    padding: 0; /* Verwijdert de padding van de lijst van kenmerken */
+    list-style: none; /* Verwijdert de standaard lijststijl (zoals opsommingstekens) */
+}
+
+.feature-item {
+    border-bottom: 1px solid; /* Voegt een onderstreep toe aan elk lijstitem */
+    padding: 10px; /* Voegt padding toe rond elk lijstitem */
+}
+
+.price {
+    font-size: 50px; /* Zet de tekstgrootte van de prijs groot */
+    font-family: serif; /* Maakt het lettertype van de prijs een serif-lettertype */
+    margin: 10px 0; /* Voegt marge toe boven en onder de prijs */
+}
+
+.btn-primary {
+    text-decoration: none; /* Verwijdert de onderstreping van de knop */
+    background: #847477; /* Zet de achtergrondkleur van de knop op een grijsbruine tint */
+    padding: 10px; /* Voegt padding toe rond de knop */
+    color: white; /* Zet de tekstkleur op wit */
+    border-radius: 4px; /* Maakt de hoeken van de knop afgerond */
+}
+
+.container {
+    /* Flexbox eigenschappen voor de container */
+    display: flex; /* Zet de container in een flexbox lay-out */
+    justify-content: center; /* Centreert de kaarten horizontaal binnen de container */
+}
+
+.card {
+    /* Flexbox eigenschappen voor de kaarten */
+    align-self: center; /* Centreert elke kaart verticaal binnen de container */
+}

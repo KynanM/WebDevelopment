@@ -1,0 +1,16 @@
+table{
+    border: black 2px solid;
+}
+td:first-child, td:last-child{
+    background-color: rgb(255,220,220);
+}
+.vrije-dag{
+    background-color: rgb(250,120,120);
+}
+caption{
+    background-color: rgb(200,190,240);
+}
+thead{
+    color: rgb(200,190,240);
+    background-color: rgb(35,37,70);
+}

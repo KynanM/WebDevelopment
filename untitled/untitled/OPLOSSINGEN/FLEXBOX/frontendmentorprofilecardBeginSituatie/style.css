@@ -1,0 +1,100 @@
+/* Definieer de font-family "Kumbh" */
+@font-face {
+  font-family: "Kumbh"; /* De naam van het lettertype */
+  src: url(fonts/kumbh.ttf) format("truetype"); /* Het lettertype wordt geladen vanuit de opgegeven bestandspad */
+}
+
+/* Stijl van de body */
+body {
+  font-size: 1.8em; /* Stelt de basis lettergrootte in */
+  font-family: "Kumbh"; /* Gebruik het eerder gedefinieerde lettertype "Kumbh" */
+  background: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg'), hsl(185, 75%, 39%); /* Achtergrondafbeeldingen en een kleur worden ingesteld */
+  background-repeat: no-repeat; /* Voorkomt herhaling van de achtergrondafbeeldingen */
+  background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw); /* Specificeert de positie van de achtergrondafbeeldingen */
+  min-block-size: 100vh; /* Zorgt ervoor dat de body minimaal de hoogte van het scherm heeft */
+  margin: 0; /* Verwijdert de standaard marge van de body */
+  display: flex; /* Zet de body in een flexbox lay-out */
+  justify-content: center; /* Centreert de inhoud horizontaal */
+  align-items: center; /* Centreert de inhoud verticaal */
+}
+
+/* Stijl voor de profielkaart */
+.card {
+  background: url('images/bg-pattern-card.svg') no-repeat, white; /* Achtergrondafbeelding en witte achtergrond voor de kaart */
+  border-radius: .5em; /* Maakt de hoeken van de kaart afgerond */
+  min-block-size: 20rem; /* Minimum hoogte van de kaart */
+  inline-size: 100%; /* De breedte van de kaart is 100% van het beschikbare formaat */
+  max-inline-size: 350px; /* Maximaliseert de breedte van de kaart tot 350px */
+  display: flex; /* Zet de kaart in een flexbox lay-out */
+  flex-direction: column; /* Plaatst de inhoud in een kolom */
+  align-items: center; /* Centreert de inhoud horizontaal binnen de kaart */
+}
+
+/* De afbeelding van het profiel komt eerst bovenaan door "order: -1" */
+.card .profile-picture-wrapper {
+  order: -1; /* Verplaatst de afbeelding naar de bovenkant van de kaart */
+  margin-block-start: 4.5em; /* Voegt marge toe boven de afbeelding */
+}
+
+/* Stijlen voor de header van de kaart */
+.card header {
+  text-align: center; /* Centreert de tekst in de header */
+  border-block-end: 1px solid hsl(0, 0%, 59%); /* Voegt een grijze lijn toe onder de header */
+}
+
+/* Zorgt ervoor dat de inhoud in de header naast elkaar komt */
+.card header div {
+  display: inline-block; /* Zorgt ervoor dat de elementen naast elkaar komen */
+}
+
+/* De afbeelding van het profiel krijgt een cirkelvorm */
+.card img {
+  border-radius: 100%; /* Maakt de afbeelding rond */
+  border: .25em solid white; /* Voegt een witte rand toe rond de afbeelding */
+  display: flex; /* Maakt de afbeelding een flex-item */
+}
+
+/* Stijl voor de naam in de header */
+.name {
+  font-weight: bold; /* Maakt de naam vetgedrukt */
+}
+
+/* De statistieken krijgen een kleinere lettergrootte en zijn horizontaal verdeeld */
+.card .stats {
+  font-size: .75rem; /* Zet de lettergrootte voor de statistieken kleiner */
+  inline-size: 100%; /* Zorgt ervoor dat de breedte van de statistieken 100% van het beschikbare formaat is */
+  padding: 2em; /* Voegt padding toe rondom de statistieken */
+  display: flex; /* Zet de statistieken in een flexbox lay-out */
+  flex-direction: row; /* Plaatst de statistieken naast elkaar in een rij */
+  align-items: center; /* Centreert de items verticaal in de rij */
+  justify-content: space-evenly; /* Verdeelt de statistieken gelijkmatig over de beschikbare ruimte */
+}
+
+/* De kleur voor de statistieken is grijs */
+.stats {
+  color: hsl(0, 0%, 59%); /* Zet de kleur van de tekst voor de statistieken op een grijze tint */
+}
+
+/* De hoeveelheid statistieken krijgt een grotere, gedurfde stijl */
+.stats .amount {
+  color: initial; /* Zet de kleur terug naar de standaardkleur */
+  font-size: 1.25em; /* Maakt de statistieken groter */
+  font-weight: bold; /* Maakt de statistieken vetgedrukt */
+  display: inline-block; /* Zorgt ervoor dat de hoeveelheid statistiek naast de tekst komt */
+  text-transform: uppercase; /* Zet de hoeveelheid tekst in hoofdletters */
+}
+
+/* Centreer alle statistieken */
+.card .stats>* {
+  text-align: center; /* Centreert de inhoud van de statistieken */
+}
+
+/* Stijl voor de leeftijd en locatie */
+.age, .location {
+  color: hsl(0, 0%, 59%); /* Zet de tekstkleur voor leeftijd en locatie op grijs */
+}
+
+/* De locatie krijgt een kleinere lettergrootte */
+.location {
+  font-size: .75rem; /* Zet de lettergrootte voor de locatie kleiner */
+}

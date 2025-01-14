@@ -1,0 +1,11 @@
+
+.row div:nth-child(odd){
+    background-color:lightgrey;
+    height: 100px;
+    background-clip: content-box;
+}
+
+.row div:nth-child(even){
+    background-color: grey;
+    height: 100px;
+}

@@ -1,0 +1,153 @@
+/* Algemene stijlen voor de body */
+body {
+    margin: 0; /* Verwijder de standaardmarges */
+    background: #E6E6E6 url('../fotos/pagebackground.png') repeat-y center top; /* Zet een achtergrondafbeelding die verticaal herhaald wordt */
+    font-family: Arial, Helvetica, sans-serif; /* Gebruik de lettertypen Arial, Helvetica, of sans-serif */
+}
+
+/* De container die de gehele pagina omhult */
+#container {
+    margin: 0px auto; /* Centrer de container door automatische marges */
+    width: 960px; /* Zet de breedte van de container op 960px */
+}
+
+/* De bovenste sectie van de pagina met de titel en afbeelding van het vliegtuig */
+.top {
+    height: 200px; /* Stel de hoogte van de sectie in */
+    text-align: center; /* Centreer de tekst */
+    background: url('../fotos/bgsky3.jpg'); /* Achtergrondafbeelding van de lucht */
+    position: relative; /* Stelt de positie in voor de absoluut gepositioneerde afbeelding */
+    color: darkblue; /* Stel de tekstkleur in op donkerblauw */
+}
+
+/* Titel binnen de bovenste sectie */
+.top h1 {
+    margin: 0px; /* Verwijder de standaardmarge van de h1 */
+    font-size: 300%; /* Maak het lettertype drie keer zo groot */
+    font-style: italic; /* Zet de tekst in cursief */
+    font-weight: bold; /* Zet de tekst vetgedrukt */
+}
+
+/* De paragraaf binnen de bovenste sectie */
+.top p {
+    font-size: 240%; /* Zet het lettertype 2,4 keer zo groot */
+    margin-top: 50px; /* Voeg wat marge boven de tekst toe */
+    font-style: normal; /* Zet de tekststijl op normaal */
+    font-weight: bold; /* Zet de tekst vetgedrukt */
+}
+
+/* De afbeelding in de bovenste sectie wordt absoluut gepositioneerd */
+.top img {
+    position: absolute; /* Absoluut gepositioneerd ten opzichte van de dichtstbijzijnde relatief gepositioneerde ouder */
+    bottom: 60px; /* Zet de afbeelding 60px boven de onderkant van de container */
+    right: 90px; /* Zet de afbeelding 90px van de rechterkant */
+}
+
+/* De sidebar met nieuwsitems aan de rechterkant */
+.news {
+    float: right; /* Laat de sidebar rechts van de pagina zweven */
+    width: 250px; /* Stel de breedte van de sidebar in op 250px */
+    color: #666666; /* Zet de tekstkleur op grijs */
+    border: 1px solid #999999; /* Voeg een grijze rand toe rondom de sidebar */
+    background-color: #dddddd; /* Zet de achtergrondkleur van de sidebar op lichtgrijs */
+    font-size: 90%; /* Zet de lettergrootte iets kleiner dan de standaard */
+}
+
+/* De kop van de nieuwsitems in de sidebar */
+.news h1 {
+    color: white; /* Zet de tekstkleur op wit */
+    background-color: blue; /* Zet de achtergrondkleur op blauw */
+    font-size: 120%; /* Zet de lettergrootte iets groter dan de standaard */
+    text-align: center; /* Centreer de tekst */
+}
+
+/* De paragraaf in de nieuwssecties */
+.news p {
+    padding: 0px 10px; /* Voeg wat padding toe aan de zijkanten van de paragrafen */
+}
+
+/* De hoofdinhoud van de pagina met inleiding en galerij */
+.main {
+    float: left; /* Laat de hoofdinhoud links van de pagina zweven */
+    width: 700px; /* Stel de breedte van de hoofdinhoud in op 700px */
+}
+
+/* De introductie sectie bevat het logo en tekst */
+.introduction > .logo {
+    float: left; /* Laat het logo links zweven */
+    width: 140px; /* Stel de breedte van het logo in op 140px */
+    box-sizing: border-box; /* Zorg ervoor dat padding en border niet de totale breedte beïnvloeden */
+    padding: 20px 20px; /* Voeg padding toe aan alle zijkanten van het logo */
+}
+
+/* De tekst in de introductie sectie */
+.introduction > .text {
+    float: left; /* Laat de tekst links zweven naast het logo */
+    box-sizing: border-box; /* Zorg ervoor dat padding en border niet de totale breedte beïnvloeden */
+    width: 560px; /* Stel de breedte van de tekst in op 560px */
+    padding: 20px 30px 20px 0px; /* Voeg padding toe aan de tekst */
+    margin: 0; /* Verwijder de marges */
+    background-color: white; /* Zet de achtergrondkleur van de tekst op wit */
+    color: black; /* Zet de tekstkleur op zwart */
+    font-size: 90%; /* Zet de lettergrootte iets kleiner dan de standaard */
+    text-align: justify; /* Zorg ervoor dat de tekst gerechtvaardigd wordt */
+}
+
+/* Specifieke stijl voor de span-tag in de tekst */
+.introduction > .text span {
+    font-style: italic; /* Zet de tekst in cursief */
+    color: blue; /* Zet de tekstkleur op blauw */
+    font-weight: bold; /* Zet de tekst vetgedrukt */
+}
+
+/* De galerij van afbeeldingen met vliegtuigfoto's */
+.gallery {
+    clear: both; /* Zorg ervoor dat de galerij onder alle zwevende elementen komt */
+    background-color: #999999; /* Zet de achtergrondkleur van de galerij op een grijze tint */
+    padding: 10px 0px 10px 10px; /* Voeg padding toe rondom de galerij */
+}
+
+/* Elke individuele fotokader in de galerij */
+.fotokader {
+    display: inline-block; /* Zorg ervoor dat de fotokaders naast elkaar worden weergegeven */
+    width: 200px; /* Zet de breedte van de fotokaders op 200px */
+    height: 200px; /* Zet de hoogte van de fotokaders op 200px */
+    margin: 10px 10px; /* Voeg wat ruimte toe tussen de fotokaders */
+    background-color: white; /* Zet de achtergrondkleur van de fotokaders op wit */
+    border: 1px dashed #999999; /* Voeg een gestippelde rand toe aan de fotokaders */
+}
+
+/* De afbeeldingen binnen de fotokaders */
+.fotokader > img {
+    padding: 10px; /* Voeg wat padding toe rondom de afbeelding */
+}
+
+/* De navigatiebalk aan de onderkant van de pagina */
+.bottom {
+    clear: both; /* Zorg ervoor dat de navigatie onder de zwevende elementen komt */
+    background-color: #666666; /* Zet de achtergrondkleur van de navigatie op grijs */
+    color: white; /* Zet de tekstkleur op wit */
+}
+
+/* Het blok voor elk navigatie-item in de onderkant sectie */
+.block {
+    display: inline-block; /* Zorg ervoor dat de navigatie-items naast elkaar worden weergegeven */
+    margin-left: 120px; /* Voeg wat marge toe aan de linkerzijde */
+    margin-bottom: 0px; /* Verwijder de marge onder de navigatie-items */
+    line-height: 2em; /* Verhoog de regelhoogte voor een betere leesbaarheid */
+}
+
+/* De links in de navigatie-items */
+.block a {
+    color: white; /* Zet de tekstkleur van de links op wit */
+}
+
+/* Het hover-effect voor de navigatielinks */
+.block a:hover {
+    color: red; /* Zet de tekstkleur op rood wanneer de muis erover beweegt */
+}
+
+/* De voettekst met de copyrightinformatie */
+.copyright p {
+    text-align: center; /* Centreer de tekst in de voettekst */
+}
