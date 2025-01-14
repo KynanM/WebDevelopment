@@ -1,0 +1,47 @@
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* Correcte selector voor h1 en h2 binnen de header */
+header, footer {
+    color: #8D99AE;
+    background-color: #2B2D42;
+}
+
+header h1, header h2 {
+    color: #EDF2F4; /* Zorg ervoor dat h1 en h2 wit worden */
+}
+
+header, footer, main {
+    padding: 30px;
+}
+
+main {
+    background-color: #8D99AE;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+/* Voeg stijlen voor links toe */
+a {
+    color: red; /* Zet links rood */
+    text-decoration: none; /* Optioneel: onderstreping verwijderen */
+}
+
+a:hover {
+    color: darkred; /* Rood bij hover */
+}

@@ -1,0 +1,47 @@
+section > header:first-of-type {
+    background-image: url('../images/header.jpg'); /* Replace with the correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+body{
+    width: 95%;
+    margin: auto;
+
+}
+
+article{
+    background-color: #abb1b8;
+    margin: 0;
+
+}
+
+article h1{
+    font-size: 36px;
+    text-decoration: underline;
+    color: #555555;
+    margin: 5px; /* Verwijder extra marge boven en onder */
+    padding: 0px; /* Verwijder eventuele extra padding */
+}
+
+
+footer a{
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+nav a{
+    color: #59a627;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav{
+    background-color: #333333;
+
+}
+

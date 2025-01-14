@@ -1,0 +1,77 @@
+html{
+  margin:0px;
+  padding:0px;}
+
+
+body {
+  font: 1.2em Verdana, Helvetica, Arial, sans-serif;
+}
+
+#wrapper{
+  width: 95%;
+  margin-right: auto;  /*2.5*/
+  margin-left: auto;   /*2.5*/
+
+}
+#imgHeader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size:           150%;
+}
+
+h1, h2 {
+  color:               #007e7e;
+}
+
+h2 {
+  font-size:           130%;
+
+}
+
+
+#guarantee {
+  line-height:         1.9em;
+  font-style:          italic;
+  font-family:         Georgia, "Times New Roman", Times, serif;
+  color:               #444444;
+  border:              1px dashed white;
+
+  padding:  25px 25px 25px 80px;
+  margin:              30px;
+  background:   #a7cece url(../images/background.gif) no-repeat top left;
+
+}
+
+footer{
+  clear:both;
+  font-size:           50%;
+  text-align:          center;
+  line-height:         normal;
+  margin-top:          30px;
+}
+
+.cd {
+  font-style:          italic;
+}
+
+.artist {
+  font-weight:         bold;
+}
+
+a:link {
+  color:               #007e7e;
+}
+
+a:visited {
+  color:               #333333;
+}
+
+
+
+
+
+
