@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, "Courier New", sans-serif;
+    color: #292929;
+    width : 100%;
+    background-image: url("../images/chips_challenge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    background-color: #292929;
+    color: white;
+    width: 100%;
+    background-size: cover;
+    margin: auto;
+    padding: 10px;
+}
+
+nav a{
+    text-align: center;
+    color: white;
+    background-color: #292929;
+    width: 100%;
+    background-size: cover;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        border-color: white;
+        border-radius: 15px;
+    }
+
+    main h2{
+        color: #292929;
+        border-bottom: 0.5rem solid;
+        font-size: 200%;
+        text-transform: capitalize;
+    }
+
+    .monsters {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+    .monsters .block{
+        width: auto;
+        align-items: center;
+        border-color: #CCC;
+        border-style: dotted;
+        border-width: 2px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        border-color: white;
+        border-radius: 15px;
+    }
+
+    main h2{
+        color: #292929;
+        border-bottom: 0.5rem solid;
+        font-size: 200%;
+        text-transform: capitalize;
+    }
+
+    .monsters {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .monsters .block{
+        width: auto;
+        align-items: center;
+        border-color: #CCC;
+        border-style: dotted;
+        border-width: 2px;
+
+    }
+}
+
+.tabel{
+    tab-size: 1;
+    border-bottom-color: #aaa;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    margin: 0.2em 1em;
+    text-align: left;
+}
+
+.lijstGames{
+    display: flex;
+}
+
+footer{
+    background-color: #a7a5a5;
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.8em;
+    width: 100%;
+    position: sticky;
+}
+
+footer a{
+    color: #ce0000;
+}
+
+
+
+
+
