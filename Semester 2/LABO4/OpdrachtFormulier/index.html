@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier Elementen</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h2>Personal Information</h2>
+    <form action="#" method="post">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" required autofocus placeholder="Your first name"><br>
+        
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName" required placeholder="Your last name"><br>
+
+        <h3>Sports</h3>
+        <p>Which sport do you train?</p>
+        <input type="checkbox" id="running" name="sport" value="Running">
+        <label for="running">Running</label><br>
+        <input type="checkbox" id="swimming" name="sport" value="Swimming">
+        <label for="swimming">Swimming</label><br>
+        <input type="checkbox" id="rowing" name="sport" value="Rowing">
+        <label for="rowing">Rowing</label><br>
+
+        <h3>Gender</h3>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other / Prefer not to say</label><br>
+
+        <h3>Favorites</h3>
+        <label for="movie">Favorite movie:</label>
+        <input type="text" id="movie" name="movie"><br>
+
+        <label for="quote">Favorite quote:</label>
+        <input type="text" id="quote" name="quote" placeholder="Write your favorite quote"><br>
+
+        <label for="food">Favorite food:</label>
+        <select id="food" name="food">
+            <option value="hamburger">Hamburger</option>
+            <option value="hotdog">Hot Dog</option>
+            <option value="pizza">Pizza</option>
+        </select><br>
+
+        <label for="flavor">Choose a flavor:</label>
+        <input type="text" id="flavor" name="flavor"><br>
+
+        <h3>Security & Contact</h3>
+        <label for="password">Password*:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address"><br>
+
+        <label for="website">Favorite site:</label>
+        <input type="url" id="website" name="website" placeholder="Enter the URL of your favorite site"><br>
+
+        <h3>Additional Information</h3>
+        <label for="favoriteNumber">Favorite number (1-10):</label>
+        <input type="number" id="favoriteNumber" name="favoriteNumber" min="1" max="10"><br>
+
+        <label for="favoriteNumberRange">Favorite number (1-1000):</label>
+        <input type="range" id="favoriteNumberRange" name="favoriteNumberRange" min="1" max="1000"><br>
+
+        <label for="birthdate">When were you born?</label>
+        <input type="date" id="birthdate" name="birthdate"><br>
+
+        <label for="zipcode">Belgium zip-code reg number:</label>
+        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{4}" placeholder="9999"><br>
+
+        <h3>Miscellaneous</h3>
+        <label for="search">Search for something:</label>
+        <input type="search" id="search" name="search"><br>
+
+        <label for="color">What is your favorite color?</label>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="fileUpload">Upload a file:</label>
+        <input type="file" id="fileUpload" name="fileUpload"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <script src="scripts/code.js"></script>
+</body>
+</html>

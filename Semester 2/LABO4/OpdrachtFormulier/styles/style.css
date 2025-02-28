@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+form {
+    width: 350px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid black;
+}
+input, label, select {
+    display: block;
+    margin-bottom: 10px;
+}

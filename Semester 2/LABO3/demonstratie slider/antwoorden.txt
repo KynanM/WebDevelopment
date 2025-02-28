@@ -1,0 +1,19 @@
+Antwoorden op de vragen van de demonstratie slider-opdracht
+
+1. Waar wordt de event listener gekoppeld aan de slider?
+   - De event listener wordt gekoppeld in de functie setup(). Dit gebeurt met:
+     sliders[0].addEventListener("change", update);
+     sliders[0].addEventListener("input", update);
+
+2. Waarom moeten we die op twee soorten events koppelen?
+   - 'input': Voert de update uit terwijl je de slider beweegt.
+   - 'change': Wordt pas uitgevoerd als je de muisknop loslaat.
+   - Beide zijn nodig voor een vloeiende gebruikerservaring.
+
+3. In de CSS file wordt nergens een rode kleur opgegeven, waar wordt dan wel de rode kleur van het blokje ingesteld?
+   - De rode kleur wordt in JavaScript ingesteld met:
+     colorDemos[0].style.backgroundColor = "red";
+
+4. Waarom schrijven we telkens sliders[0] en colorDemos[0] en niet gewoon sliders of colorDemos?
+   - getElementsByClassName() retourneert een lijst van elementen.
+   - Met sliders[0] pakken we het eerste element uit de lijst, zodat we er direct mee kunnen werken.
