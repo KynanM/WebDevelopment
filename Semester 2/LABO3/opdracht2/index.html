@@ -2,26 +2,15 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorpicker</title>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Title</title>
 </head>
 <body>
-<p>Waar wordt de event listener gekoppeld aan de slider?</p>
-<p> Bij het javaScript gedeelde, namelijk : nst update = () => {
-
-    let sliders = document.getElementsByClassName("slider");
-    let value=sliders[0].value;
-    console.log("de waarde van de slider is momenteel : "+value);
-    }</p>
-<p>Waarom moeten we die op twee soorten events koppelen?</p>
-<p> Omdat je op beide Events moet reageren.</p>
-<p>In de CSS file wordt nergens een rode kleur opgegeven, waar wordt dan wel de rode kleur van
-het blokje ingesteld?</p>
-<p>Bij dit deel van de code bij JavaScript : 	colorDemos[0].style.backgroundColor="red";
-</p>
-<p>Waarom schrijven we telkens sliders[0] en colorDemos[0] en niet gewoon sliders of
-    colorDemos?</p>
-<p> Omdat dit ArrayLists zijn</p>
-<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+    <input type="range" id="r" min="0" max="255">
+    <input type="range" id="g" min="0" max="255">
+    <input type="range" id="b" min="0" max="255">
+    <div id="colorBox"></div>
+    <script src="scripts/code.js"></script>
 </body>
 </html>
