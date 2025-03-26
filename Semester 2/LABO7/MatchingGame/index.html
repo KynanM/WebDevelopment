@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Spel</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="controls">
+    <label for="cardCountSlider">Aantal kaarten:</label>
+    <input type="range" id="cardCountSlider" min="4" max="12" step="2" value="6">
+    <span id="cardCountDisplay">6</span>
+    <br>
+    <label for="matchCountSlider">Aantal matches:</label>
+    <input type="range" id="matchCountSlider" min="2" max="6" step="1" value="2">
+    <span id="matchCountDisplay">2</span>
+</div>
+<div id="game-board" class="game-board"></div>
+<div id="win-modal" class="win-modal">
+    <div class="win-modal-content">
+        <h2>Gefeliciteerd!</h2>
+        <p>Je hebt het spel gewonnen!</p>
+        <button id="play-again-btn">Speel opnieuw</button>
+    </div>
+</div>
+<script src="scripts/code.js"></script>
+</body>
+</html>
