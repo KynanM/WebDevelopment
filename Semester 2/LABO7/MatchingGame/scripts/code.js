@@ -1,14 +1,14 @@
 const global = {
-    IMAGE_SUBFOLDER: 'images/', // Zorg ervoor dat je deze map hebt met de afbeeldingen
-    AUDIO_SUBFOLDER: 'sounds/',
+    IMAGE_SUBFOLDER: './images/', // Voegt een correct pad toe vanuit index.html
+    AUDIO_SUBFOLDER: './sounds/',
     MAX_IMAGES: 6,
     CORRECT_TIMEOUT: 500,
     WRONG_TIMEOUT: 500,
     matchCount: 2,
     cardCount: 6,
-    TURN_SOUND: new Audio('sounds/flip.mp3'),
-    CORRECT_SOUND: new Audio('sounds/correct.mp3'),
-    WRONG_SOUND: new Audio('sounds/wrong.mp3'),
+    TURN_SOUND: new Audio('./sounds/flip.mp3'),
+    CORRECT_SOUND: new Audio('./sounds/correct.mp3'),
+    WRONG_SOUND: new Audio('./sounds/wrong.mp3'),
     selectedCards: [],
     processing: false,
     cardCountSlider: document.querySelector('#cardCountSlider'),
@@ -18,6 +18,8 @@ const global = {
     gameBoard: document.querySelector('#game-board'),
     winModal: null
 };
+console.log('Geluidspaden:', global.TURN_SOUND.src, global.CORRECT_SOUND.src, global.WRONG_SOUND.src);
+
 
 const calculateGridDimensions = (totalCards) => {
     const aspectRatio = window.innerWidth / window.innerHeight;
@@ -91,11 +93,10 @@ const setup = () => {
     const availableImages = Array.from({ length: global.MAX_IMAGES }, (_, i) => `image${i + 1}.jpg`);
     let selectedImages = [];
 
-    // Trek random afbeeldingen zonder duplicaten
     for (let i = 0; i < global.cardCount / 2; i++) {
         const randomIndex = Math.floor(Math.random() * availableImages.length);
         const selectedImage = availableImages.splice(randomIndex, 1)[0];
-        selectedImages.push(selectedImage, selectedImage); // Voeg het geselecteerde paar toe
+        selectedImages.push(selectedImage, selectedImage);
     }
 
     shuffleCards(selectedImages);
@@ -106,6 +107,7 @@ const setup = () => {
         Card.dataset.image = global.IMAGE_SUBFOLDER + image;
         Card.addEventListener('click', turnCard);
         global.gameBoard.appendChild(Card);
+        console.log('Afbeeldingspad:', Card.dataset.image);
     });
 };
 
