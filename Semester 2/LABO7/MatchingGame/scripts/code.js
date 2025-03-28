@@ -1,5 +1,5 @@
 const global = {
-    IMAGE_SUBFOLDER: './images/', // Voegt een correct pad toe vanuit index.html
+    IMAGE_SUBFOLDER: './images/',
     AUDIO_SUBFOLDER: './sounds/',
     MAX_IMAGES: 6,
     CORRECT_TIMEOUT: 500,
@@ -18,7 +18,6 @@ const global = {
     gameBoard: document.querySelector('#game-board'),
     winModal: null
 };
-console.log('Geluidspaden:', global.TURN_SOUND.src, global.CORRECT_SOUND.src, global.WRONG_SOUND.src);
 
 
 const calculateGridDimensions = (totalCards) => {
