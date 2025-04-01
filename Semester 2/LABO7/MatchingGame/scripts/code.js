@@ -89,7 +89,7 @@ const setup = () => {
     const { cols } = calculateGridDimensions(global.cardCount);
     global.gameBoard.style.gridTemplateColumns = `repeat(${cols}, 100px)`;
 
-    const availableImages = Array.from({ length: global.MAX_IMAGES }, (_, i) => `image${i + 1}.jpg`);
+    const availableImages = Array.from({ length: global.MAX_IMAGES }, (_, i) => `image${i}.jpg`);
     let selectedImages = [];
 
     for (let i = 0; i < global.cardCount / 2; i++) {
